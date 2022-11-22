@@ -13,13 +13,13 @@ import java.util.Map;
 public class StoreService {
     private final Map<Integer, Product> productMap = new HashMap<>();
 
-    public void addProducts(int... ints){
-        for(int i: ints){
-            productMap.put(i,new Product(i));
+    public void addProducts(int... ints) {
+        for (int i : ints) {
+            productMap.put(i, new Product(i));
         }
     }
 
-    public Collection<Product> getProducts(){
+    public Collection<Product> getProducts() {
         return this.productMap.values();
     }
 }
