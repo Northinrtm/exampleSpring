@@ -15,7 +15,7 @@ public class StoreController {
         this.storeService = storeService;
     }
 
-    @RequestMapping(value = "/store/order/add", method = RequestMethod.GET)
+    @GetMapping(value = "/store/order/add")
     public void addS(@RequestParam int... ints) {
         this.storeService.addProducts(ints);
     }
