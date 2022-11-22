@@ -9,6 +9,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 @Service
+@Scope("prototype")
 public class StoreService {
     private final Map<Integer, Product> productMap = new HashMap<>();
 
