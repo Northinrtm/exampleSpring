@@ -1,6 +1,8 @@
 package com.example.examplespring.model;
 
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 
+@EnableAutoConfiguration
 public class Product {
     private final int id;
 
