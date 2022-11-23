@@ -1,6 +1,5 @@
 package com.example.examplespring.model;
 
-
 public class Product {
     private final int id;
 

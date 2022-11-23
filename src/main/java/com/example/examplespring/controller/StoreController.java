@@ -15,12 +15,12 @@ public class StoreController {
         this.storeService = storeService;
     }
 
-    @GetMapping(value = "/store/order/add")
+    @GetMapping("/store/order/add")
     public void addS(@RequestParam int... ints) {
         this.storeService.addProducts(ints);
     }
 
-    @GetMapping(value = "/store/order/get")
+    @GetMapping("/store/order/get")
     public Collection<Product> getProducts() {
         return this.storeService.getProducts();
     }
